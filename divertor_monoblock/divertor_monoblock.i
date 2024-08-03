@@ -1026,7 +1026,7 @@ tungsten_atomic_density = ${units 6.338e28 m^-3}
     petsc_options_value = 'lu'
     nl_rel_tol  = 1e-8
     nl_abs_tol  = 1e-11
-    end_time = 1600   # 1 ITER pulse cycle
+    end_time = 3200   # 2 ITER pulse cycles
     automatic_scaling = true
     line_search = 'none'
     dtmin = 1e-4
@@ -1045,11 +1045,11 @@ tungsten_atomic_density = ${units 6.338e28 m^-3}
 [Outputs]
     [exodus]
         type = Exodus
-        sync_only = true
+        sync_only = false
         # output at key moment in the first two cycles, and then at the end of the simulation
         sync_times = '110.0 480.0 590.0 1600.0 1710.0 2080.0 2190.0 3400.0 8.0e4'
     []
-    csv = true
+    csv = false
     hide = 'dt
             Int_C_mobile_W Int_C_trapped_W Int_C_total_W
             Int_C_mobile_Cu Int_C_trapped_Cu Int_C_total_Cu

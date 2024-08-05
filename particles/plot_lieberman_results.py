@@ -76,7 +76,7 @@ xmax = 2.5
 ymin = 80
 ymax = 100
 fig, ax = plt.subplots()
-im = plt.imread("lieberman_population.png")
+im = plt.imread("./base_figs/lieberman_population.png")
 df = pd.read_csv(particle_population_file)
 
 ax.set_xticks([xmin, xmax])
@@ -102,7 +102,7 @@ xmax = 0.1
 ymin = 0
 ymax = 2.5e5
 fig, ax = plt.subplots()
-im = plt.imread("lieberman_potential.png")
+im = plt.imread("./base_figs/lieberman_potential.png")
 
 ax.set_xticks([xmin, xmax])
 ax.set_yticks([ymin, ymax])
@@ -134,7 +134,7 @@ ymax = 1e6
 xmin = 0
 xmax = 0.1
 fig, ax = plt.subplots()
-im = plt.imread("lieberman_vdf.png")
+im = plt.imread("./base_figs/lieberman_vdf.png")
 
 ax.set_xticks([xmin, xmax])
 ax.set_yticks([ymin, ymax])
